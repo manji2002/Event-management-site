@@ -1,0 +1,119 @@
+#logo{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#row{
+    display: flex;
+    gap: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid yellow;
+    padding-left: 80px;
+    padding-right: 20px;
+    background-color: beige;
+    box-shadow: 2px 4px gray;
+    height: 350px;
+}
+#contact{
+    font-size: x-large;
+    margin-top: 45px;
+}
+.col{
+    width: 250px;
+    justify-content: center;
+    
+}
+#adress{
+    margin-top: -10px;
+}
+#map{
+    width: 200px;
+    height: 80px;
+}
+#phoneno{
+    font-size: large;
+    margin-top: 5px;
+    font-weight: 500;
+
+}
+#email{
+    margin-top: -15px;
+    font-weight: 300;
+}
+#link{
+    margin-top: 40px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#col3{
+    width: 150px;
+}
+#subscribe{
+    background-color: goldenrod;
+    color: white;
+    border-color: none;
+    height: 25px;
+}
+#flowr{
+    margin-left: -40px;
+    width: 100px;
+}
+a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+.iconcollections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8%;
+    gap: 5px;
+
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    gap: 5px;
+    
+}
+.brands{
+    color: black;
+    font-size: 2rem;
+
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom left,orange ,black);
+}
+.icon:hover .brands{
+    color: aliceblue;
+    /* animation */
+    animation: rotate 5s;
+}
+  @keyframes rotate{
+    0%{
+        transform: rotate(90deg);
+    }
+    20%{
+        transform: rotate(-90deg);
+    }
+    40%{
+        transform: rotate(90deg);
+    }
+    60%{
+        transform: rotate(-90deg);
+    }
+    80%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }  
+}

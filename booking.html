@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.squarespace-cdn.com/content/v1/649473108cc1fc3d13c7af46/8ab50b37-03d5-451a-8af3-d7d518eb26ba/shutterstock_480758203.jpg);
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #f9f6f6;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+            width: 400px; 
+        }
+
+        label {
+            margin-bottom: 5px;
+            display: block;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px; 
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #0476f8;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0476f8;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+        .l{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="bookingsuccess.html" method="post">
+        <h2>Event Booking Form</h2>
+        <label class="l" for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label class="l" for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label class="l" for="eventDate">Event Date:</label>
+        <input type="date" id="eventDate" name="eventDate" required>
+
+        <label class="l" for="eventType">Event Type:</label>
+        <select id="eventType" name="eventType" required>
+            <option value="" selected disabled hidden>select</option>
+            <option value="birthday">Birthday Party</option>
+            <option value="photography">Photography Session</option>
+            <option value="wedding">Wedding</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label class="l" for="notes">Additional Notes:</label>
+        <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+        
+        <button><a href="bookingsuccess.html" style="text-decoration: none; color: black;">Submit</a></button>
+    </form>
+</body>
+</html>
